@@ -16,7 +16,9 @@ namespace Query2CSV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var mainWindow =  new MainWindow();
+            new MainWindowPresenter(mainWindow);
+            Application.Run(mainWindow);
         }
     }
 }
